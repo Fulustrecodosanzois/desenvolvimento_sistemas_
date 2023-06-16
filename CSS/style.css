@@ -1,0 +1,21 @@
+body{font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: aqua;}
+
+h1{text-align: center;}
+
+section{width: 400px;}
+
+/* FORMATANDO O BLOCO 1 */
+
+
+.bloco1 p{color: blueviolet;}/* no caso abaixo chamamos a classe, porém irá interferir apenas nos p */
+.bloco1 > p{text-decoration: line-through; text-align: end;} /* o comando "> p" chama apenas as filhas diretas da tag*/
+.bloco1{border-width: 2px;
+        border-color: red;
+        border-style: solid;  
+        border-right: 2px;      
+}
+
+/*FORMATANDO BLOCO 2*/
+
+.bloco2{border: 2px solid green;}
