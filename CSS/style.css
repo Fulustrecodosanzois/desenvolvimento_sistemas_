@@ -1,5 +1,5 @@
 body{font-family: Verdana, Geneva, Tahoma, sans-serif;
-     background-color: aqua;}
+     background-color: rgb(119, 196, 196);}
 
 h1{text-align: center;}
 
@@ -13,9 +13,13 @@ section{width: 400px;}
 .bloco1{border-width: 2px;
         border-color: red;
         border-style: solid;  
-        border-right: 2px;      
+        margin: 50px 70px;
+        /* Quando colocamos dois valores no margim, o primeiro valor irá afetar top e bottom, o segundo afeta left e right*/     
+        box-sizing: border-box;/* irá alterar o comportamento padrão do dimencionamento da caixa, de forma que quanndo aplicado border e padding a estrutura não irá expandir, mas ficará com o mesmo tamanho só que recalculado */
 }
 
 /*FORMATANDO BLOCO 2*/
 
-.bloco2{border: 2px solid green;}
+.bloco2{border: 2px solid green;  padding: 10px 50px;}
+
+.bloco2 + p{text-transform: uppercase; color:blue;} /* O + serve como referência para editar a próxima tag ou próximo seletor após (neste caso) o bloco2, sempre será o próximo seletor ou bloco após a referência */
