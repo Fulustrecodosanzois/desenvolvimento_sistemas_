@@ -1,0 +1,23 @@
+body{box-sizing: border-box;
+     background-color: coral;
+     font-family: arial;
+
+}
+
+h1{text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.ingredientes, .preparo{background-color: lightcyan;
+              border-radius: 20px; 
+              padding: 10px; 
+              height: 350px; 
+              margin: 10px;           
+}
+
+.ingredientes > h2, .preparo{ background-color: chocolate;color: white; border-radius: 20px; padding: 10px;}
+
+.ingredientes ul li, .preparo ol li{font-size: 18px;line-height: 0.8cm;}
+
+::selection{background-color: darksalmon;} /* é uma pseudoclasse que irá alterar a cor de seleção do texto*/
