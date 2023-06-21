@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/tabela_mesclar.css">
+    <title>Trabalhando com Tabelas</title>
+</head>
+<body>
+    <hr>
+    <h1>Contatos</h1>
+    <hr>
+
+    <table>
+        <!-- thead é uma tag que define o cabeçalho da tabela -->
+        <thead>
+            <tr> <!-- a tag TR define uma linha na tabela -->
+                <th>Nome</th> <!--TH define a coluna-->
+                <th>email</th>
+                
+            </tr>
+        </thead>
+       <tbody>
+                <!-- linha1 -->
+            <tr>
+                <td rowspan="2">José</td>
+                <td>email_1</td>
+                <td>email_2</td>
+            </tr>
+                <!-- linha 2 -->
+            <tr>
+                <td>emial_3</td>
+                <td>emial_4</td>
+            </tr>
+                    <!-- linha 3 -->
+            <tr>
+                <td rowspan="2">Maria</td>
+                <td>emial_5</td>
+                <td>emial_6</td>
+                
+            </tr>
+                <!-- linha 3 -->
+                
+                <td>emial_5</td>
+                <td>emial_6</td>
+                    
+            </tr>
+       </tbody> 
+    </table>
+        
+</body>
+</html>

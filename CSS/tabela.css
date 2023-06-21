@@ -5,6 +5,19 @@ h1{text-align: center;
 
 hr{border: 5px solid green;}
 
-table, tr, th, td{border: 1px solid black; border-collapse: collapse; padding: 10px;}
+/*FORMATAÇÃO 1 */
+/* table, tr, th, td{border: 1px solid black; border-collapse: collapse; padding: 10px;} */
 
-table{margin: 10px auto;}/* Cantralizando comm margin, o primeiro valor é acima e abaixo, no segundo valor é esquerda direita*/
+table{margin: 10px auto; width: 50%; border-collapse: collapse;}/* Cantralizando comm margin, o primeiro valor é acima e abaixo, no segundo valor é esquerda direita*/
+
+/* formatação 2*/
+
+/* th, td{border-bottom: 1px solid gray;padding: 10px; text-align: center;} */
+
+/* FORMATAÇÃO 3 */
+
+TH{background-color: dodgerblue;color: white; font-family: Arial;}
+th, td{padding: 10px; text-align: center;}
+tbody > tr:nth-child(even){background-color: aliceblue;}/* even para todos os números pares e ODD para os números ímpares, o nth-shild() irá formatar um filho específico que será informado no (), se colocar 1n, será de um em um, se for 2n será de dois em dois */
+
+tbody > tr:hover{text-decoration: underline;cursor: pointer;}/* pointer é para que vire um ponteiro quando passar a seta no elemento*/
