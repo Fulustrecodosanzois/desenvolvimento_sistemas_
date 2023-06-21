@@ -1,0 +1,23 @@
+body{box-sizing: border-box;
+     background-color: rgb(22, 122, 117);
+     font-family: Arial;
+
+}
+
+h1{text-align: center;
+   background-color: rgb(3, 78, 78);
+   border-radius: 30px; 
+   padding: 10px; 
+   font-family: monospace;  
+   color: white; 
+   text-shadow: 2px 2px 2px black;
+}
+
+section{color: white; 
+    text-shadow: 1px 1px 1px rgb(5, 5, 5);
+    line-height: 0.7cm;
+}
+
+a:visited{color: cornflowerblue;}
+
+a{text-decoration: none;}
