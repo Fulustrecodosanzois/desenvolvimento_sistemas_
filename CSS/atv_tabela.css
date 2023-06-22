@@ -1,0 +1,12 @@
+h1{text-align: center;}
+table, tr, th, td{border: 1px solid black; border-collapse: collapse; padding: 5px; margin: 0 auto;}
+
+tbody > tr:nth-child(5){background-color: chartreuse;}
+
+thead{background-color: darkcyan;}
+
+.web{background-color: aqua;}
+
+.css{background-color: aqua;}
+
+.ope{background-color: aqua;}
