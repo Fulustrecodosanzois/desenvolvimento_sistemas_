@@ -1,0 +1,11 @@
+h1{text-align: center;}
+body{font-family: Verdana;}
+
+/* FORMULÁRIO */
+form{width: 80%;border: 1px solid black; padding: 10px; margin: 0 auto; border-radius: 20px;}
+
+input{width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box;outline: none; border: 1px solid black;}
+/* o outiline desabilita a seleção da caixa quando marcada */
+
+input:focus{box-shadow: 5px 5px 5px black;}
+/* o primeiro e segundo valor controlam o eixo y e x o terceiro rege a opacidade, o focus é para que ele apareça apenas quando selecionado */
