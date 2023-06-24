@@ -8,25 +8,67 @@
 </head>
 <body>
     <h1>Formulário com HTML e css</h1>
-
     <!-- action= para onde vai / method= como vai usando get e post-->
     <form action="#" method="get">
         <!--  o for="" basea-se no id, ou seja, leva o mesmo nome do id -->
-
-
         <fieldset><!-- configuração de campo=  -->
             <legend>Cadastro</legend>
                 <label for="nome">Seu nome</label> 
-                <input type="text" nome="nome" id="nome">
+                <input type="text" nome="nome" id="nome" placeholder="Insira seu nome completo" maxlength="10"> <!-- maxlength limita os carácteres e minlencth fa zo mínimo-->
                 <br>
                 <label for="senha">Sua senha</label>
-                <input type="password" name="senha" id="senha">
+                <input type="password" name="senha" id="senha" disabled>
+                <br>
+                <br>
+                <label for="">Qual seu estilo musical?</label>
+                <br>
+                <br>
+                <input type="checkbox" name="musica" id="rock" value="rock">
+                <label for="rock">Rock</label>
+                <br>
+                <input type="checkbox" name="musica" id="Reggae" value="reggae">
+                <label for="Reggae">Reggae</label>
+                <br>
+                <input type="checkbox" name="musica" id="forro" value="forro">
+                <label for="forro">Forró</label>
+                <br>
+                <br>
+                <label for="">Como está seu dia?</label>
+                <br>
+                <br>
+                <input type="radio" name="dia" id="otimo" value="otimo">
+                <label for="">Ótimo</label>
+                <br>
+                <input type="radio" name="dia" id="bom" value="bom">
+                <label for="">Bom</label>
+                <br>
+                <input type="radio" name="dia" id="ruim" value="ruim">
+                <label for="">Ruim</label>
+                <br>
+                <br>
+                <label for="">Escolha seu estado</label>
+                <select name="estado" id="estado">
+                    <option value="esco">Escolha seu estado...</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+                <br>
+                <label for="mensagem">Deixe sua opnião</label>
+                <br>
+                <textarea name="mensagem" id=" mensagem"></textarea>
+                <br>
+                <label for="arquivo">Envie um arquivo</label>
+                <input type="file" name="arquivo" id="arquivo" accept="image/*">
+                <!-- para todos os tipos de arquivo de imagem se usa o * -->
+                <br>
+                <br>
+                <section class="btn">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                    <button type="">Botão</button>
+                </section>
         </fieldset>
-        
-        
-
     </form>
-
-
 </body>
 </html>
