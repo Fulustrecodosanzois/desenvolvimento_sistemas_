@@ -15,3 +15,12 @@ input[type="checkbox"]{width: 5%;}
 input[type="checkbox"], input[type="radio"]{width: 5%;}
 
 textarea{height: 100px; resize: none;}/* resize bloqueia o ajuste de tamanho*/ 
+
+.btn > * {width: 30%; border: none; padding: 10px; font-size: 16px; background-color: #c2c0c0;}
+
+.btn > *:active{outline: 1px outset black;}
+
+.btn > *:hover{cursor: pointer; background-color: #a5a5a5;}
+
+input[type=color]{padding: 0;}
+

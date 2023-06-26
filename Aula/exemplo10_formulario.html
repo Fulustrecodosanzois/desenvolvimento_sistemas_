@@ -9,12 +9,12 @@
 <body>
     <h1>Formulário com HTML e css</h1>
     <!-- action= para onde vai / method= como vai usando get e post-->
-    <form action="#" method="get">
+    <form action="#" method="get" enctype="multipart/form-data"> <!-- o enctype é usado para validar o envio de arquivo -->
         <!--  o for="" basea-se no id, ou seja, leva o mesmo nome do id -->
         <fieldset><!-- configuração de campo=  -->
             <legend>Cadastro</legend>
                 <label for="nome">Seu nome</label> 
-                <input type="text" nome="nome" id="nome" placeholder="Insira seu nome completo" maxlength="10"> <!-- maxlength limita os carácteres e minlencth fa zo mínimo-->
+                <input type="text" nome="nome" id="nome" placeholder="Insira seu nome completo" minlength="5" maxlength="10" required> <!-- maxlength limita os carácteres e minlencth fa zo mínimo / required torna obrigatório o preenchimento dos dados-->
                 <br>
                 <label for="senha">Sua senha</label>
                 <input type="password" name="senha" id="senha" disabled>
@@ -48,13 +48,13 @@
                 <br>
                 <label for="">Escolha seu estado</label>
                 <select name="estado" id="estado">
-                    <option value="esco">Escolha seu estado...</option>
+                    <option value="esco">Escolha seu estado:</option>
                     <option value="MA">Maranhão</option>
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
                 </select>
                 <br>
-                <label for="mensagem">Deixe sua opnião</label>
+                <label for="mensagem">Deixe sua opnião:</label>
                 <br>
                 <textarea name="mensagem" id=" mensagem"></textarea>
                 <br>
@@ -68,6 +68,18 @@
                     <input type="reset" value="Limpar">
                     <button type="">Botão</button>
                 </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros campos de formulário</legend>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade em anos">
+            <input type="date" name="nascimento" id="nascimento">
+
+            <input type="range" name="volume" id="volume" min="1" max="11">
+
+            <input type="color" name="cor" id="cor">
+
+            
         </fieldset>
     </form>
 </body>
