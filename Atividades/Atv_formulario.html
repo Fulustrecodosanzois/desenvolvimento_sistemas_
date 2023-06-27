@@ -11,60 +11,61 @@
     <form action="#" method="get" enctype="multipart/form-data"></form>
         <section >
             <fieldset class="info">
-                <legend>Informações do Cliente</legend>
+                <legend class="infor">Informações do Cliente</legend>
                 <label for="nome">Nome:</label>
                
-                <input type="text" id="nome" placeholder="Digite seu nome" required><br/>
+                <input type="text" id="nome" placeholder="Digite seu nome com até 50 caracters" maxlength="50" required><br/>
                
                 <label for="email">Email:</label>
                
-                <input type="email" id="email" placeholder="Digite seu email" required><br/>
+                <input type="email" id="email" placeholder="ex: email@email.com" required><br/>
                
                 <label for="telefone">Telefone:</label>
                
-                <input type="tel" id="telefone" placeholder="Digite seu telefone">
+                <input type="tel" id="telefone" placeholder="(98)912345678">
             </fieldset>
         </section>
-
+        <br>
         <section>
             <fieldset class="itens">
-                <legend>Itens do Pedido</legend>
+                <legend class="itens2">Itens do Pedido</legend>
                 <label for="pizza">Pizza</label>
-                <input type="checkbox" name="pizza" id="pizza">
+                <input type="checkbox" name="pizza" id="pizza"><br>
                 <label for="burguer">Hamburguer</label>
-                <input type="checkbox" name="burguer" id="burger">
+                <input type="checkbox" name="burguer" id="burger"><br>
                 <label for="sorvete">Sorvete</label>
                 <input type="checkbox" name="sorvete" id="sorvete">
             </fieldset>
         </section>
+        <br>
         <section>
-            <fieldset>
+            <fieldset class="card">
                 <legend>Informações do Cartão</legend>
-            
                 <label for="n_cartao">Número do Cartão</label>
                 <br>
-                <input type="number" id="numero_cartao" name="numero_cartao" maxlength="19" required>
+                <input type="number" id="numero_cartao" name="numero_cartao" maxlength="19" placeholder="1234.5678.9101.1234" required>
                 <br>
                 <label for="">Nome no Cartão</label>
                 <br>
-                <input type="text" id="nome_card" name="nome_card">
+                <input type="text" id="nome_card" name="nome_card" placeholder="Nome como no cartão">
                 <br>
                 <label for="validade">Data de  Validade</label>
                 <br>
-                <input type="date" name="validade" id="validade">
+                <input type="date" name="validade" id="validade" placeholder="">
                 <br>
-                <label for="cvc">CVC</label>
+                <label for="cvc">CVV</label>
                 <br>
-                <input type="password" id="cvc" name="cvc" maxlength="3">
+                <input type="password" id="cvc" name="cvc" minlength="0" maxlength="3">
             </fieldset>
         </section>
-
-        <fieldset>
+        <br>
+        <fieldset class="texto">
             <legend>Observações</legend>
-            <textarea nome="texto" cols="50" rows="5" placeholder=""></textarea>
+            <textarea nome="texto" cols="63" rows="6" placeholder="Informe de quer acrescentar ou retirar alguma coisa do pedido, ou qualquer outra informação"></textarea>
         </fieldset>
+        <br>
         <section>
-            <button>Confirmar Pedido</button>
+            <button class="bnt">Confirmar Pedido</button>
         </section>
     </form>
     
