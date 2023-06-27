@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Atv_formulario.css">
+    <title>Atividade formulário</title>
+</head>
+<body>
+    <h1>Pedido Online</h1>
+    <form action="#" method="get" enctype="multipart/form-data"></form>
+        <section >
+            <fieldset class="info">
+                <legend>Informações do Cliente</legend>
+                <label for="nome">Nome:</label>
+               
+                <input type="text" id="nome" placeholder="Digite seu nome" required><br/>
+               
+                <label for="email">Email:</label>
+               
+                <input type="email" id="email" placeholder="Digite seu email" required><br/>
+               
+                <label for="telefone">Telefone:</label>
+               
+                <input type="tel" id="telefone" placeholder="Digite seu telefone">
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset class="itens">
+                <legend>Itens do Pedido</legend>
+                <label for="pizza">Pizza</label>
+                <input type="checkbox" name="pizza" id="pizza">
+                <label for="burguer">Hamburguer</label>
+                <input type="checkbox" name="burguer" id="burger">
+                <label for="sorvete">Sorvete</label>
+                <input type="checkbox" name="sorvete" id="sorvete">
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Informações do Cartão</legend>
+            
+                <label for="n_cartao">Número do Cartão</label>
+                <br>
+                <input type="number" id="numero_cartao" name="numero_cartao" maxlength="19" required>
+                <br>
+                <label for="">Nome no Cartão</label>
+                <br>
+                <input type="text" id="nome_card" name="nome_card">
+                <br>
+                <label for="validade">Data de  Validade</label>
+                <br>
+                <input type="date" name="validade" id="validade">
+                <br>
+                <label for="cvc">CVC</label>
+                <br>
+                <input type="password" id="cvc" name="cvc" maxlength="3">
+            </fieldset>
+        </section>
+
+        <fieldset>
+            <legend>Observações</legend>
+            <textarea nome="texto" cols="50" rows="5" placeholder=""></textarea>
+        </fieldset>
+        <section>
+            <button>Confirmar Pedido</button>
+        </section>
+    </form>
+    
+</body>
+</html>
